@@ -7,10 +7,10 @@ tags: [mathematics, jekyll, mathjax]
 
 Information from jojozhuang's [post on mathjax](https://jojozhuang.github.io/tutorial/jekyll-math-symbols-with-mathjax/).
 
-# Using MathJax in Jekyll with Markdown
+A short post about how to enable MathJax in Jekyll for markdown.
 
-## Step 1. Create MathJax.html in _includes
-Create a file named with mathjax.html in _includes/ directory  with the following content:
+## Step 1. Create mathjax.html in _includes
+Create a file named with mathjax.html in \_includes/ directory  with the following content:
 
 ```html
 <script type="text/x-mathjax-config">
@@ -55,4 +55,3 @@ tags: [mathematics, pure mathematics, linear algebra, open university]
 mathjax: true
 ---
 ~~~
-
