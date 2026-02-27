@@ -1,0 +1,9 @@
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Tags"
+    url: /tags/
+  - title: "Recommended Reading"
+    url: /recommendedreading/
+  - title: "About"
+    url: /aboutme/

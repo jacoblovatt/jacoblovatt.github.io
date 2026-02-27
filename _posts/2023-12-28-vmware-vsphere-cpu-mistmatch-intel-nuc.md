@@ -13,13 +13,15 @@ When installing VMware ESXi 8.0 on my Intel NUC Core i5-1250P Wallstreet Canyon,
 ![VMware ESXi Fatal CPU Mismatch](/assets/img/blog/fatal-cpu-mismatch.png)
 
 The key components of the error message
-> HW feature incompatibility detected: cannot start  
-> ...  
-> CPU_CheckUniformity@vmkernel#nover  
-> ...  
-> Fatal CPU mismatch on feature "Hyperthreads per core"  
-> Fatal CPU mismatch on feature "Cores per package"  
-> Fatal CPU mismatch on feature ...  
+```
+HW feature incompatibility detected: cannot start  
+...  
+CPU_CheckUniformity@vmkernel#nover  
+...  
+Fatal CPU mismatch on feature "Hyperthreads per core"  
+Fatal CPU mismatch on feature "Cores per package"  
+Fatal CPU mismatch on feature ...  
+```
 
 # Cause
 This problem is caused by the new architecture of Intel CPUs (12th Generation) which are equipped with different types of cores - Performance-cores and Efficient-cores. 

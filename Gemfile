@@ -1,6 +1,12 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gemspec
-
+gem "jekyll", "~> 4.4"
+gem "minima", "~> 2.5"
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-sitemap", "~> 1.4"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "base64", "~> 0.3"
+gem "bigdecimal", "~> 4.0"
+gem "csv", "~> 3.3"
+gem "logger", "~> 1.7"
+gem "webrick", "~> 1.9"

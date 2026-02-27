@@ -1,0 +1,346 @@
+---
+---
+
+@import "minima";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --surface-soft: #f3f6fb;
+  --ink: #1a2430;
+  --ink-muted: #5d6b7c;
+  --line: #dde5ef;
+  --brand: #1f5a93;
+  --brand-strong: #154a7b;
+  --radius: 8px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "IBM Plex Serif", Georgia, serif;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.site-header,
+.site-footer {
+  background: #ffffff;
+  border-color: var(--line);
+}
+
+.site-header {
+  border-top: 3px solid var(--brand);
+}
+
+.site-title,
+.site-nav .page-link,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+.site-title {
+  font-weight: 600;
+}
+
+.wrapper {
+  max-width: 860px;
+}
+
+.page-content {
+  padding-top: 2rem;
+}
+
+.home .page-heading {
+  margin-bottom: 0.35rem;
+}
+
+.home .post-list-heading {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--brand-strong);
+  letter-spacing: 0;
+  margin-top: 1.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.home .post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.home .post-list > li {
+  margin-bottom: 0.9rem;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.home .post-list > li:hover {
+  border-color: #bfd0e3;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
+  transform: translateY(-1px);
+}
+
+.home .post-link {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  color: var(--brand-strong);
+  text-decoration: none;
+}
+
+.home .post-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.post-title,
+.page-heading {
+  color: var(--brand-strong);
+  letter-spacing: -0.01em;
+}
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.post-meta {
+  color: var(--ink-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: var(--brand);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--brand-strong);
+}
+
+pre,
+code {
+  font-family: "JetBrains Mono", monospace;
+  border-radius: 6px;
+}
+
+code {
+  background: #edf2f8;
+  padding: 0.1rem 0.28rem;
+  font-size: 0.88em;
+}
+
+pre {
+  border: 1px solid var(--line);
+  background: #fafcff;
+  padding: 0.9rem;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 3px solid var(--brand);
+  background: var(--surface-soft);
+  border-radius: 0 6px 6px 0;
+  padding: 0.7rem 0.95rem;
+  color: var(--ink-muted);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.52rem 0.65rem;
+  font-size: 0.95rem;
+}
+
+th {
+  background: #f2f6fb;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+.btn,
+.tag-btn {
+  display: inline-block;
+  padding: 0.22rem 0.5rem;
+  margin: 0 0.38rem 0.38rem 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #f2f6fb;
+  color: var(--brand-strong);
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.74rem;
+}
+
+.site-nav .page-link {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-weight: 500;
+  color: #304255;
+}
+
+.site-footer {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+}
+
+.footer-col-wrapper {
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+
+.home-tagline {
+  margin: 0.4rem 0 0.7rem;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #23364b;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.home-hero {
+  margin: 0 0 1.35rem;
+  padding: 1.05rem 1.05rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, #f4f8fd);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.home-kicker {
+  margin: 0;
+  color: var(--brand);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home-summary {
+  margin: 0 0 0.85rem;
+  color: #405266;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.98rem;
+}
+
+.home-focus-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.focus-chip {
+  display: inline-block;
+  padding: 0.2rem 0.52rem;
+  border: 1px solid #cfdbea;
+  border-radius: 999px;
+  background: #f6f9fd;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  color: #2f4a66;
+}
+
+.home-section-note {
+  margin: 0.1rem 0 1rem;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.footer-brand {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-weight: 600;
+  color: #213449;
+}
+
+.footer-tagline {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.93rem;
+}
+
+.footer-social .social-media-list {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social .social-media-list li {
+  margin: 0 0 0 0.55rem;
+}
+
+.post-content img,
+.page-content img {
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 17px;
+  }
+
+  .post-title {
+    font-size: 1.6rem;
+  }
+
+  .home .post-list > li {
+    margin-bottom: 0.75rem;
+    padding: 0.78rem 0.8rem 0.85rem;
+  }
+
+  .home-hero {
+    padding: 0.8rem;
+  }
+
+  .footer-row {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .footer-social .social-media-list {
+    justify-content: flex-start;
+  }
+
+  .footer-social .social-media-list li {
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
