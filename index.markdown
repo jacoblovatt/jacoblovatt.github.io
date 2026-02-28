@@ -12,11 +12,7 @@ list_title: Recent Writing
   I also sometimes write about personal interests.</p>
   <div class="home-hero-actions">
     <a class="anthropic-btn" href="/blog/">Read all posts</a>
-    <a class="anthropic-link" href="/aboutme/">Curriculum Vitae</a>
-  </div>
-  <div class="home-social-links">
-    <a class="anthropic-link" href="https://github.com/jacoblovatt" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a class="anthropic-link" href="https://www.linkedin.com/in/jacoblovatt1987/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="anthropic-link" href="/aboutme/">About me</a>
   </div>
 </section>
 
