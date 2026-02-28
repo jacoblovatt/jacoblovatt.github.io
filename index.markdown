@@ -19,7 +19,7 @@ list_title: Recent Writing
 <section class="home-panels" aria-label="Blog focus areas">
   <article class="home-panel">
     <h3>Architecture and Infrastructure</h3>
-    <p>System architecture, cloud infrastructure, networking, and reliability lessons.</p>
+    <p>System architecture, cloud infrastructure, networking, and practical engineering notes.</p>
   </article>
   <article class="home-panel">
     <h3>Security and Cryptography</h3>

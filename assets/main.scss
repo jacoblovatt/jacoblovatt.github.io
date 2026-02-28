@@ -76,9 +76,24 @@ a:hover {
 }
 
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
   color: var(--ink);
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+.site-title::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #d2c6ae;
+  background-image: url("{{ '/assets/img/avatar-icon.png' | relative_url }}");
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 42px;
 }
 
 .site-nav .page-link {
@@ -487,23 +502,35 @@ a:focus-visible,
 
 .footer-row {
   display: grid;
-  grid-template-columns: minmax(180px, auto) minmax(260px, 1fr) auto;
-  gap: 1.1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "brand social"
+    "tagline social";
+  column-gap: 1.1rem;
+  row-gap: 0.25rem;
   align-items: start;
   padding: 1.2rem 0;
 }
 
 .footer-brand {
+  grid-area: brand;
   margin: 0;
+  padding-left: calc(42px + 0.72rem);
   color: #2a261d;
   font-family: "Merriweather", Georgia, serif;
   font-size: 1.16rem;
 }
 
 .footer-tagline {
+  grid-area: tagline;
   margin: 0;
+  padding-left: calc(42px + 0.72rem);
   color: #5c5445;
   line-height: 1.45;
+}
+
+.footer-social {
+  grid-area: social;
 }
 
 .footer-social .social-media-list {
@@ -528,6 +555,28 @@ a:focus-visible,
   margin: 0.9rem auto 1.1rem;
   border-radius: 10px;
   border: 1px solid var(--line);
+}
+
+.about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-avatar {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #d2c6ae;
+  box-shadow: 0 4px 12px rgba(45, 35, 20, 0.08);
+  margin: 0;
+  flex: 0 0 128px;
+}
+
+.about-header p {
+  margin: 0.1rem 0 0;
 }
 
 .error-page {
@@ -595,6 +644,10 @@ a:focus-visible,
 
   .footer-row {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "tagline"
+      "social";
     gap: 0.45rem;
     align-items: start;
   }
@@ -605,6 +658,11 @@ a:focus-visible,
 
   .footer-social .social-media-list li {
     margin: 0 0.5rem 0 0;
+  }
+
+  .footer-brand,
+  .footer-tagline {
+    padding-left: calc(36px + 0.72rem);
   }
 }
 
@@ -620,6 +678,16 @@ a:focus-visible,
 
   .site-header .wrapper {
     min-height: 66px;
+  }
+
+  .site-title::before {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .footer-brand {
+    padding-left: calc(36px + 0.72rem);
   }
 
   .site-nav {
@@ -650,6 +718,11 @@ a:focus-visible,
 
   .home-hero-actions {
     flex-wrap: wrap;
+  }
+
+  .about-header {
+    flex-direction: column;
+    gap: 0.7rem;
   }
 
   .page-content .post {
