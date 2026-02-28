@@ -1,6 +1,9 @@
 ---
 layout: page
-title: About me
-subtitle: A little bit about myself
+title: Curriculum Vitae
+subtitle: Background, experience, and interests
 ---
+
+## Profile
+Experienced IT engineer with a broad technical background spanning low-level systems, Linux and Windows administration, database administration, storage, networking, virtualization, containerization, cloud technologies, and software development. I also work across data science, machine learning, and AI.
 

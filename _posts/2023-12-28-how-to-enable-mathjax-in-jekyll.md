@@ -5,12 +5,12 @@ subtitle: A short note about how to enable MathJax in Jekyll
 tags: [mathematics, jekyll, mathjax]
 ---
 
-Information from jojozhuang's [post on mathjax](https://jojozhuang.github.io/tutorial/jekyll-math-symbols-with-mathjax/).
+Based on jojozhuang's [post on MathJax](https://jojozhuang.github.io/tutorial/jekyll-math-symbols-with-mathjax/).
 
-A short post about how to enable MathJax in Jekyll for markdown.
+This is a short post on enabling MathJax in Jekyll for Markdown.
 
 ## Step 1. Create mathjax.html in _includes
-Create a file named with mathjax.html in \_includes/ directory  with the following content:
+Create a file named `mathjax.html` in the `_includes/` directory with the following content:
 
 ```html
 <script type="text/x-mathjax-config">
@@ -31,7 +31,7 @@ Create a file named with mathjax.html in \_includes/ directory  with the followi
 ```
 
 ## Step 2. Update _includes/head.html to include conditional logic
-Update file \_includes/head.html, include the above template file if page.mathjax is true.
+Update `_includes/head.html` to include the template above when `page.mathjax` is `true`.
 
 {% raw %}
 ```liquid
@@ -41,10 +41,10 @@ Update file \_includes/head.html, include the above template file if page.mathja
 ```
 {% endraw %}
 
-_Note: I had to consult [Michael Currin's cheatsheets](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/code-blocks/liquid-code.html) to display the above Liquid code snippet (this is the [raw .md file](https://github.com/MichaelCurrin/dev-cheatsheets/blob/master/cheatsheets/jekyll/code-blocks/liquid-code.md?plain=1))_
+_Note: I consulted [Michael Currin's cheatsheets](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/code-blocks/liquid-code.html) to display the Liquid snippet above (this is the [raw .md file](https://github.com/MichaelCurrin/dev-cheatsheets/blob/master/cheatsheets/jekyll/code-blocks/liquid-code.md?plain=1))._
 
-## Step 3. To Enable MathJax on a particular post
-Create a post in the normal way (under \_posts/ directory with _YYYY-MM-DD-blog-post-name.md_) and include the _mathjax: true_ directive at the start of the post like below:
+## Step 3. Enable MathJax on a specific post
+Create a post in the normal way (under `_posts/` with `YYYY-MM-DD-blog-post-name.md`) and include the `mathjax: true` directive in the front matter, like this:
 
 ~~~markdown
 ---

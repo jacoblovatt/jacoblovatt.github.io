@@ -16,6 +16,9 @@ minima:
     - title: Jacob Lovatt on GitHub
       icon: github
       url: "https://github.com/jacoblovatt"
+    - title: Jacob Lovatt on LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/jacoblovatt1987/"
 
 header_pages:
   - aboutme.md
