@@ -11,8 +11,8 @@ list_title: Recent Writing
   <p class="home-lead">I am an IT professional with interests in system architecture, cloud infrastructure, networking, security, machine learning and AI, programming, databases, and cryptography.
   I also sometimes write about personal interests.</p>
   <div class="home-hero-actions">
-    <a class="anthropic-btn" href="/blog/">Read all posts</a>
-    <a class="anthropic-link" href="/aboutme/">About me</a>
+    <a class="button-link" href="/blog/">Read all posts</a>
+    <a class="text-link" href="/aboutme/">About me</a>
   </div>
 </section>
 

@@ -1,22 +1,21 @@
 ---
 layout: page
-title: Recommended Reading
-subtitle: Books I personally recommend on various topics
+title: Reading
+subtitle: A personal reading list for the next six months
 ---
 
+My favourite and recommended reads.
 
-# Literature/Fiction
+## Fiction (My Top 20)
 
-# History
+## History and ideas
 
-# IT/Computing
+## Computing
 
-# Mathematics
+## Mathematics
 
-# Science
+## Science
 
-# Politics/Philosophy/Social Sciences
+## Philosophy and society
 
-# General Non-Fiction
-
-# Other
+## Other non-fiction

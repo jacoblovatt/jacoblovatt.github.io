@@ -180,7 +180,7 @@ a:hover {
   gap: 1rem;
 }
 
-.anthropic-btn {
+.button-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -194,23 +194,23 @@ a:hover {
   font-weight: 600;
 }
 
-.anthropic-btn:hover {
+.button-link:hover {
   color: #17130d;
   background: #efe6d3;
 }
 
-.anthropic-btn:visited {
+.button-link:visited {
   color: #1f1b14;
 }
 
-.anthropic-link {
+.text-link {
   color: #3d3629;
   text-decoration: none;
   border: 0;
   padding: 0.2rem 0;
 }
 
-.anthropic-link:hover {
+.text-link:hover {
   color: #1a1813;
   text-decoration: underline;
   text-decoration-color: rgba(26, 24, 19, 0.55);
@@ -218,7 +218,7 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-.anthropic-link:visited {
+.text-link:visited {
   color: #3d3629;
 }
 
@@ -482,8 +482,8 @@ th {
 }
 
 a:focus-visible,
-.anthropic-btn:focus-visible,
-.anthropic-link:focus-visible,
+.button-link:focus-visible,
+.text-link:focus-visible,
 .btn:focus-visible,
 .tag-btn:focus-visible {
   outline: 2px solid #334f42;

@@ -21,10 +21,9 @@ minima:
       url: "https://www.linkedin.com/in/jacoblovatt1987/"
 
 header_pages:
-  - aboutme.md
   - blog.html
   - recommendedreading.md
-  - tags.html
+  - aboutme.md
 
 markdown: kramdown
 highlighter: rouge
