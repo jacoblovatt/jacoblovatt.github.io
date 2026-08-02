@@ -8,7 +8,7 @@ list_title: Recent Writing
 <section class="home-hero">
   <p class="home-eyebrow">Personal website of Jacob Lovatt</p>
   <h2 class="home-title">Posts about things I find interesting, that are sometimes useful too.</h2>
-  <p class="home-lead">I am an IT professional with interests in system architecture, cloud infrastructure, networking, security, machine learning and AI, programming, databases, and cryptography.
+  <p class="home-lead">I am an IT professional with interests in system architecture, cloud infrastructure, networking, security, machine learning and AI, programming, databases, cryptography, mathematics, and statistics.
   I also sometimes write about personal interests.</p>
   <div class="home-hero-actions">
     <a class="button-link" href="/blog/">Read all posts</a>
@@ -26,8 +26,8 @@ list_title: Recent Writing
     <p>Security research, defensive design, and practical notes on cryptography and low-level systems.</p>
   </article>
   <article class="home-panel">
-    <h3>Programming, Data, and AI</h3>
-    <p>Databases, machine learning and AI, and software engineering and design.</p>
+    <h3>Mathematics, Data, and AI</h3>
+    <p>Mathematics, statistics, programming, databases, machine learning, and AI.</p>
   </article>
 </section>
 
